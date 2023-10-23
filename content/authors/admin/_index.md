@@ -1,13 +1,13 @@
 ---
 # Display name
-title: Ryan Qin
+title: Alex Qin
 
 # Name pronunciation (optional)
-name_pronunciation: Ryan Qin
+name_pronunciation: Alex Qin
 
 # Full name (for SEO)
-first_name: Ryan
-last_name: Qin
+first_name: 亚乾
+last_name: 秦
 
 # Status emoji
 status:
