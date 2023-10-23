@@ -1,13 +1,13 @@
 ---
 # Display name
-title: 吳健雄
+title: Ryan Qin
 
 # Name pronunciation (optional)
-name_pronunciation: Chien Shiung Wu
+name_pronunciation: Ryan Qin
 
 # Full name (for SEO)
-first_name: Shiung Wu
-last_name: Chien
+first_name: Ryan
+last_name: Qin
 
 # Status emoji
 status:
