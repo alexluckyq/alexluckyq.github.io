@@ -1,0 +1,52 @@
+{{ define "main" }}
+<section class="container hero" aria-labelledby="hero-title">
+  <div class="hero-copy"><p class="eyebrow"><span class="status-dot"></span> ANDROID / XR / MOBILE ARCHITECTURE</p>
+    <h1 id="hero-title">Building for<br>the next<br><span>dimension.</span></h1>
+    <p class="hero-intro">I'm Alex Qin, a Staff Software Engineer turning complex mobile and spatial computing challenges into useful, reliable experiences.</p>
+    <div class="hero-actions"><a class="button" href="#experience">Explore my work <span aria-hidden="true">↓</span></a><a class="text-link" href="{{ "uploads/resume.pdf" | relURL }}">View résumé <span aria-hidden="true">↗</span></a></div>
+    <p class="location">Toronto, Canada <span>·</span> 15+ years in software development</p>
+  </div>
+  <div class="spatial-panel" aria-hidden="true">
+    <div class="panel-label"><span>FROM MOBILE TO SPATIAL</span><span>01 / XR</span></div>
+    <svg viewBox="0 0 480 440" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs><pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M 32 0 H 0 V 32" stroke="#b7c6bd" stroke-width=".6"/></pattern></defs>
+      <rect x="24" y="24" width="432" height="392" fill="url(#grid)" opacity=".45"/>
+      <ellipse cx="246" cy="336" rx="176" ry="51" stroke="#9caf9f" stroke-dasharray="4 6"/>
+      <path d="M246 65V383M55 290L433 180M73 176L421 310" stroke="#a7b9af" stroke-dasharray="3 6"/>
+      <path d="M173 135L286 93L365 160L251 204Z" fill="#e4ede6" stroke="#527966"/>
+      <path d="M173 135V260L251 332V204Z" fill="#c3d6c9" stroke="#527966"/>
+      <path d="M251 204L365 160V281L251 332Z" fill="#91b49f" fill-opacity=".8" stroke="#527966"/>
+      <rect x="80" y="189" width="110" height="165" rx="16" fill="#f7f8f4" stroke="#173d2c" stroke-width="2"/>
+      <rect x="91" y="209" width="88" height="115" rx="5" fill="#e7ede4"/>
+      <path d="M119 199H152M123 340H148" stroke="#173d2c" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="135" cy="258" r="24" stroke="#608570"/>
+      <path d="M119 259L132 271L153 246" stroke="#173d2c" stroke-width="2"/>
+      <rect x="295" y="117" width="120" height="70" rx="12" fill="#173d2c"/>
+      <circle cx="328" cy="152" r="15" stroke="#c7e3b4"/>
+      <circle cx="382" cy="152" r="15" stroke="#c7e3b4"/>
+      <path d="M344 152H366" stroke="#c7e3b4"/>
+      <circle cx="247" cy="65" r="5" fill="#c65a3c"/>
+      <circle cx="421" cy="310" r="5" fill="#c65a3c"/>
+    </svg>
+    <div class="panel-bottom"><span>Kotlin · Android · AOSP</span><span class="coordinate">↗</span></div>
+  </div>
+</section>
+<div class="container proof-strip"><div><strong>15+</strong><span>years building software</span></div><div><strong>500K+</strong><span>users reached at Foupon</span></div><div><strong>10K+</strong><span>restaurants powering discovery</span></div></div>
+<section id="about" class="container section about-section">
+  <div class="section-heading"><p class="eyebrow">01 / ABOUT</p><h2>From the platform<br>to the product.</h2></div>
+  <div class="about-content"><p class="lead">I build the foundations that make great mobile experiences possible.</p><p>My work spans Android architecture, AOSP system applications, reusable components, and XR experiences. I've led technical design, collaborated across UX and platform teams, and taken consumer products from architecture through release.</p><p>Currently, I work on Android XR at Google as an XWF via Magic Leap, developing experiences that connect headsets and phones. Previously, I built Magic Leap 2 system apps and co-founded Foupon.</p>
+    <div class="about-person">{{ $photo := resources.Get "media/alex-qin.jpg" }}{{ if $photo }}{{ $thumb := $photo.Fill "128x128 Center" }}<img src="{{ $thumb.RelPermalink }}" width="64" height="64" alt="Alex Qin" loading="lazy">{{ end }}<div><strong>Alex Qin</strong><span>Bachelor's degree in Computer Science<br>Hangzhou Dianzi University</span></div></div>
+  </div>
+</section>
+<section class="expertise-wrap"><div class="container section"><div class="section-heading horizontal"><div><p class="eyebrow">THE TOOLKIT</p><h2>Depth where it matters.</h2></div><p>Platform knowledge. Product ownership.<br>A focus on maintainable software.</p></div><div class="expertise-grid">
+  <article><span class="skill-number">01</span><h3>Android & XR</h3><p>Native applications, system experiences, and spatial interfaces.</p><ul class="tags"><li>Kotlin</li><li>Java</li><li>AOSP</li><li>Jetpack Compose</li><li>Compose for XR</li><li>ARCore</li><li>C++ / NDK</li></ul></article>
+  <article><span class="skill-number">02</span><h3>Architecture & platforms</h3><p>Shared foundations for applications that work across devices.</p><ul class="tags"><li>Mobile SDKs</li><li>Reusable components</li><li>Client-server APIs</li><li>Kotlin Multiplatform</li><li>React Native</li></ul></article>
+  <article><span class="skill-number">03</span><h3>Quality & delivery</h3><p>From technical design and testing to releases and ongoing maintenance.</p><ul class="tags"><li>Hilt</li><li>Robolectric</li><li>Git / Gerrit</li><li>Gradle</li><li>CI/CD</li></ul></article>
+</div></div></section>
+<section id="experience" class="container section"><div class="section-heading horizontal"><div><p class="eyebrow">02 / EXPERIENCE</p><h2>A career in building.</h2></div><a class="text-link" href="{{ "uploads/resume.pdf" | relURL }}">Full résumé <span aria-hidden="true">↗</span></a></div>
+  <div class="experience-list">{{ range .Site.Data.career.experience }}<article class="experience"><div class="experience-meta"><h3>{{ .company }}</h3><p>{{ .dates }}</p></div><div><h4>{{ .role }}</h4>{{ with .note }}<p class="role-note">{{ . }}</p>{{ end }}<ul>{{ range .points }}<li>{{ . }}</li>{{ end }}</ul></div></article>{{ end }}</div>
+  <details class="earlier"><summary>Earlier experience <span>OnOff Labs · Vouchr · Mercer · Sage</span></summary><div>{{ range .Site.Data.career.earlier }}<article class="experience"><div class="experience-meta"><h3>{{ .company }}</h3><p>{{ .dates }}</p></div><div><h4>{{ .role }}</h4><p>{{ .detail }}</p></div></article>{{ end }}</div></details>
+</section>
+<section id="posts" class="posts-wrap"><div class="container section"><div class="section-heading horizontal"><div><p class="eyebrow">03 / POSTS</p><h2>Notes from the workbench.</h2></div><a class="text-link" href="{{ "post/" | relURL }}">All posts <span aria-hidden="true">↗</span></a></div>{{ range first 3 (where .Site.RegularPages "Section" "post") }}{{ partial "post-card.html" . }}{{ end }}</div></section>
+<section id="contact" class="container section contact-section"><div><p class="eyebrow">04 / CONTACT</p><h2>Let's build<br>something useful.</h2><p>For conversations about Android, XR, and mobile engineering.</p></div><div class="contact-links"><a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }} <span aria-hidden="true">↗</span></a><a href="{{ .Site.Params.linkedin }}">LinkedIn <span aria-hidden="true">↗</span></a><a href="{{ .Site.Params.github }}">GitHub <span aria-hidden="true">↗</span></a><a href="{{ "uploads/alex-qin-android-engineer.pdf" | relURL }}">One-page résumé <span aria-hidden="true">↗</span></a></div></section>
+{{ end }}

@@ -1,15 +1,5 @@
 ---
 title: Posts
-cms_exclude: true
-
-# View.
-#   1 = List
-#   2 = Compact
-#   3 = Card
-view: 2
-
-# Optional header image (relative to `static/media/` folder).
-header:
-  caption: ''
-  image: ''
+description: Notes on software engineering, Android, XR, and the tools changing how we build.
 ---
+Notes on software engineering, Android, XR, and the tools changing how we build.

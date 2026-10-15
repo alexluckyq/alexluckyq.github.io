@@ -1,0 +1,67 @@
+{
+  "experience": [
+    {
+      "company": "Google",
+      "role": "Software Engineer, Android XR",
+      "note": "XWF via Magic Leap",
+      "dates": "Dec 2024 \u2014 Present",
+      "points": [
+        "Developing avatar-creation experiences across Android XR headsets and Android phones, with a focus on performance, reliability, and usability.",
+        "Partnering with UX and backend engineers to ship features; created an open-source interactive 3D sample for Android XR and a prototype exploring shared Android/iOS functionality."
+      ]
+    },
+    {
+      "company": "Magic Leap",
+      "role": "Staff Software Engineer",
+      "dates": "Feb 2020 \u2014 Dec 2024",
+      "points": [
+        "Led mobile technical solution design and built Java/Kotlin system apps for Magic Leap 2 OS, including Settings, out-of-box experience, and Files.",
+        "Designed reusable component libraries and Mobile and Desktop Companion applications; prototyped Bluetooth connectivity, React Native implementations, and remote rendering."
+      ]
+    },
+    {
+      "company": "Foupon Inc.",
+      "role": "Lead Engineer & Co-Founder",
+      "dates": "Sep 2018 \u2014 Oct 2024",
+      "points": [
+        "Owned Android and iOS architecture, development, testing, store releases, and maintenance for a restaurant coupon app reaching 500,000+ users in Canada.",
+        "Built coupon and nearby-deal discovery backed by 10,000+ restaurants, and improved performance, stability, and device compatibility."
+      ]
+    },
+    {
+      "company": "Amazon \u00b7 Audible",
+      "role": "Android Developer (Contract)",
+      "dates": "May 2019 \u2014 Feb 2020",
+      "points": [
+        "Contributed to Android architecture and application components for the audiobook listening experience.",
+        "Refactored existing code for maintainability and improved stability and performance through targeted optimization."
+      ]
+    }
+  ],
+  "earlier": [
+    {
+      "company": "OnOff Labs",
+      "role": "Principal Developer & Co-Founder",
+      "dates": "Feb 2017 \u2014 May 2019",
+      "detail": "Led delivery across Android, iOS, and BlackBerry. Built FoodFun with PHP services on AWS and an Android video app using YouTube APIs."
+    },
+    {
+      "company": "Vouchr",
+      "role": "Senior Mobile Developer",
+      "dates": "Nov 2017 \u2014 Aug 2018",
+      "detail": "Designed the Surprise eGift app architecture and Vouchr SDK for embedded gifting and payment capabilities; worked with banks on integrations."
+    },
+    {
+      "company": "Mercer",
+      "role": "Senior Software Engineer",
+      "dates": "Apr 2010 \u2014 Feb 2017",
+      "detail": "Built myTime Mobile and Work Flow Wizard, designed synchronization APIs, and coordinated offshore and third-party delivery teams."
+    },
+    {
+      "company": "Sage",
+      "role": "Software Engineer",
+      "dates": "Aug 2006 \u2014 Aug 2009",
+      "detail": "Developed SalesLogix Mobile CRM features, prototyped an Android client, and designed a standalone BlackBerry database solution."
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+{{ define "main" }}<section class="container section post-list"><p class="eyebrow">THE WORKBENCH</p><h1>{{ .Title }}</h1><div class="list-intro">{{ .Content }}</div>{{ range .Pages.ByDate.Reverse }}{{ partial "post-card.html" . }}{{ end }}</section>{{ end }}
